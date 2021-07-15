@@ -1,0 +1,58 @@
+/* Header */
+.container {
+  padding: 20px;
+}
+
+.my-navbar {
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+.nav-link:hover {
+  color: #1abc9c !important;
+}
+
+main {
+  padding-top: 5px;
+  margin-bottom: 75px;
+}
+
+/* Footer  */
+
+footer {
+  text-align: center;
+  width: 100%;
+  background-color: #1abc9c;
+  padding: 25px;
+  position: fixed;
+  bottom: 0;
+}
+
+footer > p {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+#my-link {
+  text-decoration: none;
+  color: inherit;
+}
+#my-link:hover {
+  color: #93f5e1;
+  font-weight: bold;
+}
+
+/* Compose */
+section.compose > form > div.title {
+  margin: 2% auto;
+}
+section.compose > form > div.message {
+  margin: 1% auto;
+}
+
+section.compose > form > button.publishButton {
+  margin-top: 25px;
+}

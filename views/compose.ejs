@@ -1,0 +1,19 @@
+<%- include("partials/header") -%>
+<section class="compose">
+    <h1>Compose</h1>
+    <form action="/compose" method="post">
+        <div class="title">
+            <label class="form-label" for="composeTitle">Title:</label>
+            <input class="form-control" name="composeTitle" type="text" id="composeTitle"
+                placeholder="Your next blog post title" required autofocus>
+        </div>
+        <div class="message">
+            <label class="form-label" for="composeMessage">Post:</label>
+            <textarea class="form-control" name="composeMessage" id="composeMessage" rows="5"
+                placeholder="Your next blog post body" required></textarea>
+        </div>
+        <button type="submit" class="publishButton btn btn-lg btn-outline-dark">Publish</button>
+    </form>
+</section>
+
+<%- include("partials/footer") -%>
