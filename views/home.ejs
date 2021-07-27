@@ -1,11 +1,14 @@
 <%- include("partials/header") -%>
 <h1>Home</h1>
-<p><%= content %> </p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cum vel doloremque aut ducimus fugit, possimus
+    culpa dolor ea consectetur! Neque pariatur minus tenetur eos qui quas exercitationem voluptate, odio impedit
+    quibusdam eligendi velit modi similique libero aspernatur quae quia beatae ex consequatur optio numquam! Optio odit
+    voluptate necessitatibus asperiores.</p>
 <% posts.forEach(post => {%>
 <h1><%= post.title %></h1>
 <p>
-    <%= post.message.substring(0,100) %> ...
-    <a href="/post/<%= post.title %>">Read More</a>
+    <%= post.body.substring(0,100) %> ...
+    <a href="/post/<%= post._id %>">Read More</a>
 </p>
 <% });  %>
 
