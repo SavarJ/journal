@@ -94,6 +94,19 @@ app.get("/post/:postId", (req, res) => {
   });
 });
 
+app.post("/delete", (req, res) => {
+  const postId = req.body.postId;
+
+  Post.findByIdAndDelete(postId, (err) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log("Post successfully deleted!");
+    }
+    res.redirect("/");
+  });
+});
+
 app.get("*", (req, res) => {
   res.render("404");
 });
