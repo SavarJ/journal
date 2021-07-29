@@ -1,6 +1,6 @@
-# Simple Blog App - Under development
+# Simple Blog App
 
-{Add description}
+A simple
 
 ## Table of Contents
 

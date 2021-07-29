@@ -11,7 +11,7 @@
   letter-spacing: 5px;
 }
 .nav-link:hover {
-  color: #1abc9c !important;
+  color: hsl(30, 100%, 50%) !important;
 }
 
 main {
@@ -24,7 +24,7 @@ main {
 footer {
   text-align: center;
   width: 100%;
-  background-color: #1abc9c;
+  background-color: hsl(30, 100%, 50%);
   padding: 25px;
   position: fixed;
   bottom: 0;
@@ -41,7 +41,7 @@ footer > p {
   color: inherit;
 }
 #my-link:hover {
-  color: #93f5e1;
+  color: hsl(30, 100%, 40%);
   font-weight: bold;
 }
 
