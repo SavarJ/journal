@@ -1,6 +1,8 @@
 const express = require("express");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+dotenv.config();
 
 const app = express();
 
@@ -10,8 +12,9 @@ app.use(express.static("public"));
 
 app.set("view engine", "ejs");
 
+const url = process.env.DB_URL;
 mongoose
-  .connect("mongodb://localhost:27017/blogDB", {
+  .connect(url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -24,13 +27,6 @@ const postSchema = new mongoose.Schema({
 });
 
 const Post = mongoose.model("Post", postSchema);
-
-const aboutContent =
-  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ullam iure error ducimus pariatur accusamus saepe est aperiam hic quis natus, maiores illo fugit consequatur! Natus et explicabo non enim!";
-const contactContent =
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut illo doloremque iure, rem fugit labore quos quod eos incidunt laborum.";
-
-let posts = [];
 
 app.get("/", (req, res) => {
   Post.find({}, (err, foundPosts) => {
@@ -47,17 +43,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  let obj = {
-    content: aboutContent,
-  };
-  res.render("about", obj);
+  res.render("about");
 });
 
 app.get("/contact", (req, res) => {
-  let obj = {
-    content: contactContent,
-  };
-  res.render("contact", obj);
+  res.render("contact");
 });
 
 app.get("/compose", (req, res) => {
