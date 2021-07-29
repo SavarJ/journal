@@ -1,6 +1,6 @@
-# Simple Blog App
+# Simple Blogger App
 
-A simple
+A fully responsive blogging web app (using the colors of Blogger!) that allows users to post a post with a title and a body. Users can see all posts on the home page while viewing the full blog post by clicking on it.
 
 ## Table of Contents
 
@@ -16,24 +16,25 @@ A simple
 
 ## Deployment
 
-**[Live Demo: https://savarj-weather.herokuapp.com/](https://savarj-weather.herokuapp.com/)**
+**[Live Demo: https://savarj-blogger.herokuapp.com/](https://savarj-blogger.herokuapp.com/)**
 
 <br>
 
-![Blog-Home](public/images/search.png)
+![Blogger-Home](public/images/blogger-home.png)
 
 <br>
 
-![Blog-Compose](public/images/weather.png)
+![Blogger-Compose](public/images/blogger-compose.png)
 
 ## Built With
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
-- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Node.js](https://nodejs.org/en/docs/)
 - [Express.js](https://expressjs.com/en/5x/api.html)
+- [MongoDB](https://docs.mongodb.com/drivers/node/current/)
+- [Mongoose](https://mongoosejs.com/docs/)
 - [EJS](https://ejs.co/)
 
 ## Requirements
@@ -62,13 +63,13 @@ If the installation was successful, you should be able to run the following comm
     $ cd weather
     $ npm install
 
-### Running the project
-
-    $ npm start
-
 ### Updating .env
 
 Rename `.env.sample` to `.env` with the appropriate information
+
+### Running the project
+
+    $ npm start
 
 ## Author(s)
 
@@ -84,4 +85,4 @@ Licensed under the [MIT License](LICENSE)
 
 ## Acknowledgement
 
-- The Complete 2021 Web Development Bootcamp by Dr. Angela Yu
+- Challenge Project of The Complete 2021 Web Development Bootcamp by Dr. Angela Yu
