@@ -11,7 +11,7 @@
   letter-spacing: 5px;
 }
 .nav-link:hover {
-  color: hsl(30, 100%, 50%) !important;
+  color: hsl(230, 100%, 50%) !important;
 }
 
 main {
@@ -24,7 +24,7 @@ main {
 footer {
   text-align: center;
   width: 100%;
-  background-color: hsl(30, 100%, 50%);
+  background-color: hsl(230, 100%, 50%);
   padding: 25px;
   position: fixed;
   bottom: 0;
@@ -41,7 +41,7 @@ footer > p {
   color: inherit;
 }
 #my-link:hover {
-  color: hsl(30, 100%, 40%);
+  color: hsl(230, 100%, 40%);
   font-weight: bold;
 }
 
@@ -55,4 +55,24 @@ section.compose > form > div.message {
 
 section.compose > form > button.publishButton {
   margin-top: 25px;
+}
+
+/* Home */
+.post-header {
+  position: relative;
+}
+
+.date {
+  text-align: right;
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  color: hsl(0, 0%, 47%);
+  font-size: 0.9rem;
+}
+
+.post-body {
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
 }

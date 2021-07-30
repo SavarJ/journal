@@ -1,11 +1,15 @@
 <%- include("partials/header") -%>
 <h1>Home</h1>
-<p>Welcome to my simple blog website! This is where I practiced using MongoDB through Mongoose.js using Node.js and
+<p class="post-body">Welcome to my simple journal website! This is where I practiced using MongoDB through Mongoose.js
+    using Node.js and
     Express.js. This database is hosted on the cloud using MongoDB Atlas and is currently deployed on Heroku. Feel free
-    to add your own post!</p>
+    to add your own journal post!</p>
 <% posts.forEach(post => {%>
-<h1><%= post.title %></h1>
-<p>
+<div class="post-header">
+    <h1><%= post.title %></h1>
+    <span class="date"><%= post.date %></span>
+</div>
+<p class="post-body">
     <%= post.body.substring(0,100) %> ...
     <a href="/post/<%= post._id %>">Read More</a>
 </p>

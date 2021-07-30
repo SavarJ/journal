@@ -2,6 +2,7 @@ const express = require("express");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const date = require(`${__dirname}/date.js`);
 dotenv.config();
 
 const app = express();
@@ -24,6 +25,7 @@ mongoose
 const postSchema = new mongoose.Schema({
   title: String,
   body: String,
+  date: String,
 });
 
 const Post = mongoose.model("Post", postSchema);
@@ -58,13 +60,14 @@ app.post("/compose", (req, res) => {
   const post = new Post({
     title: req.body.composeTitle,
     body: req.body.composeMessage,
+    date: date.getDate(),
   });
 
   post.save((err) => {
     if (err) {
       console.error(err);
     } else {
-      console.log("Successfully saved new blog post into DB");
+      console.log("Successfully saved new post into DB");
     }
     res.redirect("/");
   });

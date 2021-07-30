@@ -1,6 +1,9 @@
 <%- include("partials/header") -%>
-<h1><%= post.title %> </h1>
-<p><%= post.body %> </p>
+<div class="post-header">
+    <h1><%= post.title %></h1>
+    <span class="date"><%= post.date %></span>
+</div>
+<p class="post-body"><%= post.body %> </p>
 <form action="/delete" method="post">
     <button class="btn btn-danger" type="submit" name="postId" value="<%=post._id%>">Delete Post</button>
 </form>

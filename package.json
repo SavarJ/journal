@@ -1,7 +1,7 @@
 {
-  "name": "blog",
+  "name": "journal",
   "version": "1.0.0",
-  "description": "Simple Blog Website",
+  "description": "Daily Journal Web App",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
