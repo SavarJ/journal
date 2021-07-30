@@ -1,7 +1,7 @@
 {
   "name": "journal",
   "version": "1.0.0",
-  "description": "Daily Journal Web App",
+  "description": "Journal Web App",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",

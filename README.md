@@ -1,6 +1,6 @@
-# Simple Blogger App
+# Simple Journal App
 
-A fully responsive blogging web app (using the colors of Blogger!) that allows users to post a post with a title and a body. Users can see all posts on the home page while viewing the full blog post by clicking on it.
+A fully responsive journaling web app that allows users to post a journal post with a title and a body. Users can see all posts on the home page while viewing the full journal post by clicking on it.
 
 ## Table of Contents
 
@@ -16,15 +16,15 @@ A fully responsive blogging web app (using the colors of Blogger!) that allows u
 
 ## Deployment
 
-**[Live Demo: https://savarj-blogger.herokuapp.com/](https://savarj-blogger.herokuapp.com/)**
+**[Live Demo: https://savarj-journal.herokuapp.com/](https://savarj-journal.herokuapp.com/)**
 
 <br>
 
-![Blogger-Home](public/images/blogger-home.png)
+![Journal-Home](public/images/journal-home.png)
 
 <br>
 
-![Blogger-Compose](public/images/blogger-compose.png)
+![Journal-Compose](public/images/journal-compose.png)
 
 ## Built With
 
@@ -59,7 +59,7 @@ If the installation was successful, you should be able to run the following comm
 
 ## Install
 
-    $ git clone https://github.com/SavarJ/weather.git
+    $ git clone https://github.com/SavarJ/journal.git
     $ cd weather
     $ npm install
 
