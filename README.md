@@ -60,7 +60,7 @@ If the installation was successful, you should be able to run the following comm
 ## Install
 
     $ git clone https://github.com/SavarJ/journal.git
-    $ cd weather
+    $ cd journal
     $ npm install
 
 ### Updating .env
